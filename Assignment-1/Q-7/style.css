@@ -1,0 +1,56 @@
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./icos/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 20px;
+}
+.login-box{
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.25);
+}
+.user-email-box ,.user-pass-box ,.submit-btn-box{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 300px;
+    border-radius: 5px;
+    margin-block-end: 20px;
+    background: rgba(252, 249, 249, 0.4);
+    padding: 0 10px;
+}
+.submit-btn-box{
+    justify-content: center;
+}
+.user-email-field , .user-pass-field,.submit-btn{
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+}
+.social-box{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social-box-1,.social-box-2{
+    background: rgba(252, 249, 249, 0.4);
+    border-radius: 5px;
+    padding: 10px;
+}
+.social-btn{
+    text-decoration: none;
+    color: #000;
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           
+            justify-items: center;
+            align-items: center;
+        }
+        .header{
+            display: inline-flex;
+        }
+        .header-area .logo{
+            padding: 40px;
+        }
+        .header-area .logo img{
+            width: 190px;
+            height: 30px;
+        }
+        .header-area .nav-links{
+            list-style: none;
+            display: flex;
+        }
+        .header-area .nav-item{
+            padding: 25px;
+
+        }
+        .header-area .nav-item a{
+            font-size: 26px;
+            text-decoration: none;
+            color: rgb(123, 117, 117);
+        }
+        .header-area .cart{
+            padding: 40px;
+            margin-left: 400px;
+        }
+        .header-area .cart img{
+            width: 25px;
+            height: 25px;
+        }
+        .header-area .profile{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header-area .profile img{
+            width: 65px;
+            height: 65px;
+        }
+        hr{
+            opacity: 0.3;
+        }
+        .product{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 150px;
+        }
+        .product .product-img{
+            position: relative;
+            top: 70px;
+        }
+        .product-main-image img{
+            height: 600px;
+            width: 600px;
+            border-radius: 20px;
+        }
+        .product-thumbnails{
+            display: flex;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        .product-thumbnails img{
+            height: 120px;
+            width: 120px;
+            border-radius: 12px;
+        }
+        .product-details{
+            position: relative;
+            height: 600px;
+            width: 600px;
+        }
+        .product-details h2{
+            opacity: 0.6;
+        }
+        .product-details h1{
+            margin-top: 0px;
+            font-size: 60px;
+        }
+        .product-details p{
+            width: 550px;        
+            font-size: 25px;
+            opacity: 0.6;
+        }
+        .product-details h3{
+            margin-top: 0px;
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+        .product-details .discount{
+            position: absolute;
+            top: 390px;
+            left:180px;
+            height: 40px;
+            width: 70px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .product-details del{
+            font-size: 25px;
+            opacity: 0.6;
+        }
+        .product-details .quantity-cart{
+            display: flex;
+            gap: 30px;
+        }
+        .product-details .quantity{
+            height: 30px;
+            width: 200px;
+            background-color: aliceblue;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 25px;
+            font-weight: 800;
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+        .product-details .add-to-cart{
+            height: 30px;
+            width: 300px;
+            background-color: rgb(230, 112, 69);
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            font-size: 25px;
+            font-weight: 800;
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+        .product-details .add-to-cart span{
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header section starts here -->
+         <div class="header-area">
+            <div class="header">
+                <div class="logo">
+                    <img src="./icons/logo.svg" alt="Logo">
+                </div>
+                <div class="nav">
+                    <ul class="nav-links">
+                        <li class="nav-item"><a href="#">Collections</a></li>
+                        <li class="nav-item"><a href="#">Men</a></li>
+                        <li class="nav-item"><a href="#">Women</a></li>
+                        <li class="nav-item"><a href="#">About</a></li>
+                        <li class="nav-item"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="cart">
+                    <img src="./icons/icon-cart.svg" alt="Cart">
+                </div>
+                <div class="profile">
+                    <img src="./icons/image-avatar.png" alt="Profile">
+                </div>
+            </div>
+         </div>
+        <!-- Header section ends here -->
+         <hr>
+         <div class="product-area">
+            <div class="product">
+                    <div class="product-img">
+                        <div class="product-main-image">
+                            <img src="./icons/image-product-1.jpg" alt="shoe image">
+                        </div>
+                        <div class="product-thumbnails">
+                            <div class="product-thumbnail-1">
+                                <img src="./icons/image-product-1-thumbnail.jpg" alt="shoe image">
+                            </div>
+                            <div class="product-thumbnail-2">
+                                <img src="./icons/image-product-2-thumbnail.jpg" alt="shoe image">
+                            </div>
+                            <div class="product-thumbnail-3">
+                                <img src="./icons/image-product-3-thumbnail.jpg" alt="shoe image">
+                            </div>
+                            <div class="product-thumbnail-4">
+                                <img src="./icons/image-product-4-thumbnail.jpg" alt="shoe image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h2>Sneaker Company</h2>
+                        <h1>Fall Limited Editon Sneakers</h1>
+                        <p>These low-profile sneakers are your perfect casual wear
+                            companion. Featuring a durable rubber outer sole, they'll
+                            withstand everything the weather can offer.</p>
+                        <h3>$125.00</h3>
+                        <div class="discount">
+                            50%
+                        </div>
+                        <del>$250.00</del>
+                        <div class="quantity-cart">
+                            <div class="quantity">
+                                <img src="./icons/icon-minus.svg" alt="minus icon">
+                                <span>0</span>
+                                <img src="./icons/icon-plus.svg" alt="plus icon">
+                            </div>
+                            <div class="add-to-cart">
+                                <img src="./icons/icon-cart.svg" alt="cart icon">
+                                <span>Add to cart</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+         </div>
+    </div>
+</body>
+</html>

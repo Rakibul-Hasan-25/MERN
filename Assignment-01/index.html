@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 01</title>
+    <style>
+      body {
+        margin-left: 130px;
+        margin-right: 130px;
+        font-family: serif;
+      }
+
+      nav {
+        background-color: #dddddd;
+        display: flex;
+        width: 100%;
+      }
+
+      a {
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+        background-color: #f2f2f2;
+      }
+
+      a:hover {
+        background-color: #dddddd;
+      }
+      .drpdwn {
+        height: 100%;
+        border: none;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .full-form {
+        display: flex;
+      }
+      .left-side-form {
+        width: 48%;
+      }
+      .right-side-form {
+        width: 48%;
+      }
+      .middle-of-form {
+        width: 4%;
+        border-left: 1px solid black;
+      }
+      .user_input {
+        width: 92%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img
+        src="./icons/header.png"
+        alt="logo"
+        style="height: 70px; width: 100%"
+      />
+    </header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Course Module - 2020</a>
+      <a href="#">Class Schedule</a>
+      <a href="#">Success Story</a>
+      <div class="dropdown">
+        <button class="drpdwn">Attendance</button>
+        <div class="dropdown-content">
+          <a href="#">Attendance report</a>
+        </div>
+      </div>
+      <a href="#">Faq</a>
+      <a href="#">Login</a>
+    </nav>
+    <div>
+      <div
+        style="
+          margin-top: 10px;
+          color: #ef9c3b;
+          font-size: larger;
+          background-color: #fefefe;
+        "
+      >
+        Student registration form
+      </div>
+      <hr />
+      <div style="margin: 10px">
+        <div>
+          <span>Please enter relevent information</span>
+        </div>
+        <form action="">
+          <div class="full-form">
+            <div class="left-side-form">
+              <div style="font-size: xx-small">Mandatory Field<sup>*</sup></div>
+              <label for="districtName"
+                >District(<span style="font-size: x-small"
+                  >Institute District:Where you want to do your course</span
+                >)<sup>*</sup></label
+              >
+              <br />
+              <input
+                list="districts"
+                id="districtName"
+                placeholder="--Select One--"
+                class="user_input"
+              />
+              <datalist id="districts">
+                <option value="Dhaka"></option>
+                <option value="Comilla"></option>
+                <option value="Rajhshahi"></option>
+                <option value="Chittagong"></option>
+              </datalist>
+
+              <br />
+              <label for="courseName">Course<sup>*</sup></label>
+              <br />
+              <input
+                list="courses"
+                id="courseName"
+                placeholder="--Select One--"
+                class="user_input"
+              />
+              <datalist id="courses">
+                <option value="Web design"></option>
+                <option value="Graphics design"></option>
+                <option value="Database Management"></option>
+              </datalist>
+
+              <br />
+              <label for="name">Student Name<sup>*</sup></label>
+              <br />
+              <input type="text" id="name" class="user_input" />
+              <br />
+              <label for="fatherName">Father Name<sup>*</sup></label>
+              <br />
+              <input type="text" id="fatherName" class="user_input" />
+              <br />
+              <label for="motherName">Mother Name<sup>*</sup></label>
+              <br />
+              <input type="text" id="motherName" class="user_input" />
+              <br />
+              <label for="date">Date of Birth<sup>*</sup></label>
+              <br />
+              <input type="date" id="date" class="user_input" />
+              <br />
+              <span>Gender<sup>*</sup></span>
+              <input type="radio" name="gender" id="male" />
+              <label for="male"><strong>Male</strong></label>
+              <input type="radio" name="gender" id="female" />
+              <label for="female"><strong>Female</strong></label>
+              <br />
+              <span>Physically Handicapped<sup>*</sup></span>
+              <input type="radio" name="Physically" id="yes" />
+              <label for="yes"><strong>Yes</strong></label>
+              <input type="radio" name="Physically" id="no" />
+              <label for="no"><strong>No</strong></label>
+              <br />
+              <label for="email">Email<sup>*</sup></label>
+              <br />
+              <input type="email" name="email" id="email" class="user_input" />
+              <br />
+              <span>(e.g: example@mail.com)</span>
+              <br />
+              <label for="phone">Phone(Must be 11 digits)<sup>*</sup></label>
+              <br />
+              <input
+                type="text"
+                inputmode="numeric"
+                id="phone"
+                class="user_input"
+              />
+              <br />
+              <span>(e.g:0155123456)</span>
+            </div>
+            <div class="middle-of-form"></div>
+            <div class="right-side-form">
+              <label for="identity">Identification Type<sup>*</sup></label>
+              <br />
+              <input
+                list="identification"
+                id="identity"
+                placeholder="--Select One--"
+                class="user_input"
+              />
+              <datalist id="identification">
+                <option value="National ID"></option>
+                <option value="Birth Certificate No."></option>
+              </datalist>
+              <br />
+              <span>
+                Identification No. (Must be 10 digits for new NID or 17 digits
+                for old NID. If your National ID is 13 digits, then please add
+                your birth year with the ID as prefix. Example:
+                1980XXXXXXXXXXXXX)*
+              </span>
+              <br />
+              <input
+                type="text"
+                inputmode="numeric"
+                id="identity"
+                class="user_input"
+              />
+              <br />
+              <label for="homeDistrict">Home District<sup>*</sup></label>
+              <br />
+              <input
+                list="districts"
+                id="homeDistrict"
+                placeholder="--Select One--"
+                class="user_input"
+              />
+              <br />
+              <label for="upazila">Upazila<sup>*</sup></label>
+              <br />
+              <input
+                list="upazilas"
+                id="upazila"
+                placeholder="--Select One--"
+                class="user_input"
+              />
+              <datalist id="upazilas">
+                <option value="Kaliakoir"></option>
+                <option value="Dumni"></option>
+                <option value="Mirzapur"></option>
+              </datalist>
+              <br />
+              <label for="address"
+                >Village/House No./Road No./Other Alternatives<sup
+                  >*</sup
+                ></label
+              >
+              <br />
+              <input type="text" id="address" class="user_input" />
+              <br />
+              <label for="postoffice">Post Office<sup>*</sup></label>
+              <br />
+              <input type="text" id="postoffice" class="user_input" />
+              <br />
+              <label for="qualification"
+                >Educational Qualification<sup>*</sup
+                ><span style="font-size: small">(Higher Level)</span></label
+              >
+              <br />
+              <input
+                list="qualifications"
+                id="qualification"
+                placeholder="--Select One--"
+                class="user_input"
+              />
+              <datalist id="qualifications">
+                <option value="Higher Secondary/Equilivalent"></option>
+                <option value="Bachelor"></option>
+                <option value="Master"></option>
+                <option value="Phd"></option>
+              </datalist>
+              <br />
+              <span>Have any computer?<sup>*</sup></span>
+              <input type="radio" name="hac" id="yes" />
+              <label for="yes"><strong>Yes</strong></label>
+              <input type="radio" name="hac" id="no" />
+              <label for="no"><strong>No</strong></label>
+              <br />
+              <label for="photo">Photograph<sup>*</sup></label>
+              <br />
+              <input type="file" id="photo" />
+              <br />
+              <span
+                >(File type must be jpg or jpeg or png. Maximum file size 2
+                mb.)</span
+              >
+              <br />
+              <label for="sign">Signature<sup>*</sup></label>
+              <br />
+              <input type="file" id="sign" />
+              <br />
+              <span
+                >(File type must be jpg or jpeg or png. Maximum file size 80
+                kb.)</span
+              >
+              <br />
+              <input type="submit" value="Submit Data" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f76f93661d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+      <div class="login-box">
+        <div class="header">
+          <h2 style="color: rgb(18, 18, 18)">Foolish Developer</h2>
+        </div>
+        <form action="login.php" method="post">
+          <div class="user-email-box">
+            <i class="fa-solid fa-user">
+              <input
+                class="user-email-field"
+                type="email"
+                name="useremail"
+                placeholder="Email id"
+                required
+              />
+            </i>
+          </div>
+          <div class="user-pass-box">
+            <i class="fa-solid fa-lock">
+              <input
+                class="user-pass-field"
+                type="password"
+                name="password"
+                placeholder="Password"
+                required
+              />
+            </i>
+          </div>
+          <div class="submit-btn-box">
+            <button type="submit" class="submit-btn">Login</button>
+          </div>
+        </form>
+        <div class="or">
+          <p>OR</p>
+        </div>
+        <div class="social-box">
+          <div class="social-box-1">
+            <a href="#" class="social-btn"
+              ><i class="fa-brands fa-facebook-f"></i> Facebook</a
+            >
+          </div>
+          <div class="social-box-2">
+            <a href="#" class="social-btn"
+              ><i class="fa-brands fa-google"></i> Google</a
+            >
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
